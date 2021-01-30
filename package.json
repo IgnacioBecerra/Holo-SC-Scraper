@@ -1,8 +1,8 @@
 {
-  "name": "holosupalist",
+  "name": "holo-sc-scraper",
   "version": "1.0.0",
   "description": "TBD",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "chromedriver": "^87.0.4",
     "dotenv": "^8.2.0",
@@ -14,16 +14,20 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "12.18.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IgnacioBecerra/HoloSupaList.git"
+    "url": "git+https://github.com/IgnacioBecerra/Holo-SC-Scraper.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IgnacioBecerra/HoloSupaList/issues"
+    "url": "https://github.com/IgnacioBecerra/Holo-SC-Scraper/issues"
   },
-  "homepage": "https://github.com/IgnacioBecerra/HoloSupaList#readme"
+  "homepage": "https://github.com/IgnacioBecerra/Holo-SC-Scraper-#readme"
 }
