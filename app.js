@@ -295,7 +295,12 @@ yt.on('error', error => {
 // redirect to HTML homepage
 app.get('/', function(req, res, next) {
 
+const testFolder = '/usr/lib/';
+const fs = require('fs');
 
+fs.readdirSync(testFolder).forEach(file => {
+  console.log(file);
+});
   res.sendFile(path.join(__dirname + '/public/index.html'));
 
 });
