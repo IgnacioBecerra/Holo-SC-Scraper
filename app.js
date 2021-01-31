@@ -180,6 +180,13 @@ const observeCurrent = () => {
 //updateSchedules();
 //setTimeout(scheduleObservers, 5000);
 
+const testFolder = '/usr/lib/';
+const fs = require('fs');
+
+fs.readdirSync(testFolder).forEach(file => {
+  console.log(file);
+});
+
 new SuperchatScraper('Sd2-0b-qpVo', 'test', "chicken")
 
 
