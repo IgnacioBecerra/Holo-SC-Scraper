@@ -29,10 +29,6 @@ options.addArguments('--ignore-certificate-errors')
 
 const {sanitizeObject, sanitizeString } = require('./sanitizers.js');
 
-
-// FOR DEV PURPOSES
-//chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
-
 var mysql = require('mysql');
 var db_config = {
   host: process.env.host,

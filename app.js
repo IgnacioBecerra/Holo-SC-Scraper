@@ -176,16 +176,10 @@ const observeCurrent = () => {
 
 
 
-//observeCurrent()
-//updateSchedules();
-//setTimeout(scheduleObservers, 5000);
+observeCurrent()
+updateSchedules();
+setTimeout(scheduleObservers, 5000);
 
-const testFolder = '/usr/lib/';
-const fs = require('fs');
-
-fs.readdirSync(testFolder).forEach(file => {
-  console.log(file);
-});
 
 //new SuperchatScraper('Sd2-0b-qpVo', 'test', "chicken")
 
@@ -295,12 +289,7 @@ yt.on('error', error => {
 // redirect to HTML homepage
 app.get('/', function(req, res, next) {
 
-const testFolder = '/usr/bin/';
-const fs = require('fs');
 
-fs.readdirSync(testFolder).forEach(file => {
-  console.log(file);
-});
   res.sendFile(path.join(__dirname + '/public/index.html'));
 
 });
