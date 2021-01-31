@@ -27,10 +27,6 @@ options.addArguments('--disable-dev-shm-usage')
 options.addArguments('--no-sandbox')
 options.addArguments('--ignore-certificate-errors')
 
-let chromeCapabilities = webdriver.Capabilities.chrome();
-chromeCapabilities.set("acceptInsecureCerts", true);
-chromeCapabilities.set("acceptSslCerts", true);
-
 const {sanitizeObject, sanitizeString } = require('./sanitizers.js');
 
 
