@@ -7,6 +7,9 @@ const chrome = require('selenium-webdriver/chrome');
 const chromedriver = require('chromedriver');
 
 let options = new chrome.Options();
+
+options.setBinary('/usr/bin/google-chrome-stable')
+
 //Below arguments are critical for Heroku deployment
 options.addArguments("--window-size=1920,1080")
 options.addArguments("--disable-extensions")
@@ -30,7 +33,9 @@ chromeCapabilities.set("acceptSslCerts", true);
 
 const {sanitizeObject, sanitizeString } = require('./sanitizers.js');
 
-chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
+
+// FOR DEV PURPOSES
+//chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
 
 var mysql = require('mysql');
 var db_config = {
