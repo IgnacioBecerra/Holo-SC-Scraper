@@ -8,7 +8,7 @@ const chromedriver = require('chromedriver');
 
 let options = new chrome.Options();
 
-//options.setChromeBinaryPath('/usr/bin/google-chrome')
+options.setChromeBinaryPath('/usr/bin/google-chrome')
 
 //Below arguments are critical for Heroku deployment
 options.addArguments("--window-size=1920,1080")
