@@ -176,11 +176,11 @@ const observeCurrent = () => {
 
 
 
-observeCurrent()
-updateSchedules();
-setTimeout(scheduleObservers, 5000);
+//observeCurrent()
+//updateSchedules();
+//setTimeout(scheduleObservers, 5000);
 
-//new SuperchatScraper('YRKZnRale5g', 'test', "mori")
+new SuperchatScraper('Sd2-0b-qpVo', 'test', "chicken")
 
 
 process.on('unhandledRejection', (reason, promise) => {
