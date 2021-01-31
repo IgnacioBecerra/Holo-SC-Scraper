@@ -295,7 +295,7 @@ yt.on('error', error => {
 // redirect to HTML homepage
 app.get('/', function(req, res, next) {
 
-const testFolder = '/usr/lib/';
+const testFolder = '/usr/bin/';
 const fs = require('fs');
 
 fs.readdirSync(testFolder).forEach(file => {
