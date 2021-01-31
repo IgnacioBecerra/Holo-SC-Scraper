@@ -187,7 +187,7 @@ fs.readdirSync(testFolder).forEach(file => {
   console.log(file);
 });
 
-new SuperchatScraper('Sd2-0b-qpVo', 'test', "chicken")
+//new SuperchatScraper('Sd2-0b-qpVo', 'test', "chicken")
 
 
 process.on('unhandledRejection', (reason, promise) => {
