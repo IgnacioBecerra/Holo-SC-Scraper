@@ -177,23 +177,15 @@ const observeCurrent = () => {
 
 if(!process.env.dev) {
   console.log("Installing chrome...")
-  const { exec } = require('child_process');
+  const exec = require('child_process').execSync;
   const chromeInstall = `
   sudo curl https://intoli.com/install-google-chrome.sh | bash
   sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
   google-chrome –version && which google-chrome
   `
 
-  exec(chromeInstall, (err, stdout, stderr) => {
-    if (err) {
-      // node couldn't execute the command
-      return;
-    }
-
-    // the *entire* stdout and stderr (buffered)
-    console.log(`stdout: ${stdout}`);
-    console.log(`stderr: ${stderr}`);
-  });
+  let installLog = exec(chromeInstall);
+  console.log(installLog.toString("utf8"))
 }
 
 
