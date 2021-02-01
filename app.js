@@ -179,8 +179,8 @@ if(!process.env.dev) {
   console.log("Installing chrome...")
   const exec = require('child_process').execSync;
   const chromeInstall = `
-  sudo curl https://intoli.com/install-google-chrome.sh | bash
-  sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
+  sudo curl https://intoli.com/install-google-chrome.sh | bash &&
+  sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome &&
   google-chrome –version && which google-chrome
   `
 
