@@ -176,16 +176,12 @@ const observeCurrent = () => {
 
 
 if(!process.env.dev) {
+  console.log("Installing chrome...")
   const { exec } = require('child_process');
   const chromeInstall = `
-  cd /tmp/
-  sudo wget https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_linux64.zip
-  sudo unzip chromedriver_linux64.zip
-  sudo mv chromedriver /usr/bin/chromedriver
-  chromedriver – version
   sudo curl https://intoli.com/install-google-chrome.sh | bash
   sudo mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
-  google-chrome – version && which google-chrome
+  google-chrome –version && which google-chrome
   `
 
   exec(chromeInstall, (err, stdout, stderr) => {
